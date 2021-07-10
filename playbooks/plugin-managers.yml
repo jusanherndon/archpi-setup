@@ -1,0 +1,47 @@
+--- 
+- name: making directories
+  file:
+    path: "{{ item }}"
+    state: directory 
+  loop:
+    - "/home/{{ user }}/.vim"
+    - "/home/{{ user }}/.vim/bundle"
+    - "/home/{{ user }}/.vim/autoload"
+    - "/home/{{ user }}/.tmux"
+    - "/home/{{ user }}/.tmux/plugins"
+
+- name: downloading vundle
+  git:
+    repo: https://github.com/VundleVim/Vundle.vim.git 
+    dest: "/home/{{ user }}/.vim/bundle/Vundle.vim"
+      
+- name: downloading plug
+  shell: 
+    chdir: "/home/{{ user }}/.vim/autoload" 
+    cmd: curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -o plug.vim
+
+- name: downloading ohmyzsh
+  git:
+    repo: https://github.com/ohmyzsh/ohmyzsh.git
+    dest: "/home/{{ user }}/.oh-my-zsh"
+    
+- name: downloading tmux plugin manager
+  git:
+    repo: https://github.com/tmux-plugins/tpm 
+    dest: "/home/{{ user }}/.tmux/plugins/tpm"
+
+- name: downloading a theme for zsh
+  git:
+    repo: https://github.com/guesswhozzz/guezwhoz-zshell
+    dest: "/home/{{ user }}/git/guezwhoz-scheme"
+
+- name: making a system link for theme
+  file:
+    src: "/home/{{ user }}/git/guezwhoz-scheme/guezwhoz.zsh-theme"
+    dest: "/home/{{ user }}/.oh-my-zsh/themes/guezwhoz.zsh-theme"
+    state: link
+
+- name: downloading autocompletions
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: "/home/{{ user }}/.oh-my-zsh/custom/plugins/zsh-autosuggestions"

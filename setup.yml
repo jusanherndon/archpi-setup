@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  vars_files:
+    - "variables/variables.yml"
+
+  tasks:
+    - include: "{{ playbook_dir }}/playbooks/packages.yml"
+    - include: "{{ playbook_dir }}/playbooks/dotfiles.yml"
+    - include: "{{ playbook_dir }}/playbooks/git-config.yml"
+    - include: "{{ playbook_dir }}/playbooks/sudo-config.yml"
+    - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"
+    - include: "{{ playbook_dir }}/playbooks/wireless-network.yml"
+    - include: "{{ playbook_dir }}/playbooks/services.yml" 

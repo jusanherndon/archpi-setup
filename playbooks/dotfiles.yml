@@ -1,0 +1,32 @@
+--- 
+- name: Create the dotfiles directory
+  file:
+    path: "/home/{{ user }}/dotfiles"
+    state: directory
+    
+- name: Moving dotfiles to that directory
+  copy:
+    src: "{{ playbook_dir }}/playbooks/files/{{ item }}"
+    dest: "/home/{{ user }}/dotfiles/" 
+  loop: 
+    - .tmux.conf
+    - .vimrc
+
+- name: templating .zshrc
+  template:
+    src:  "{{ playbook_dir }}/playbooks/templates/.zshrc"  
+    dest: "/home/{{ user }}/dotfiles"
+
+- name: making symbolic links
+  file:
+    src: "/home/{{ user }}/dotfiles/{{ item }}"
+    dest: "/home/{{ user }}/{{ item }}"
+    state: link
+  loop:
+    - .tmux.conf
+    - .vimrc
+    - .zshrc
+
+- name: making zsh default shell
+  shell:
+    cmd: chsh -s $(which zsh)

@@ -1,0 +1,16 @@
+---
+- name: wireless network template 
+  template:
+    src: "{{ playbook_dir }}/playbooks/templates/wireless-home"
+    dest: /etc/netctl/wireless-home
+    force: yes
+
+- name: starting netctl 
+  shell:
+    chdir: /etc/netctl
+    cmd: netctl start wireless-home
+
+- name: enable on boot
+  shell:
+    chdir: /etc/netctl
+    cmd: netctl enable wireless-home

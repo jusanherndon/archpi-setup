@@ -1,0 +1,17 @@
+---
+- name: Download packages from the AUR
+  community.general.pacman:
+    name: 
+      - sudo
+      - base-devel
+      - vim
+      - openssh
+      - net-tools
+      - docker
+      - curl 
+      - tmux
+      - python-pip
+      - netctl
+      - zsh
+    extra_args: --needed
+    state: present
