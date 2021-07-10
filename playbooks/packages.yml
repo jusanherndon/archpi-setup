@@ -2,7 +2,7 @@
 - name: Download packages from the AUR
   community.general.pacman:
     name: 
-      - sudo
+      - doas
       - base-devel
       - vim
       - openssh
