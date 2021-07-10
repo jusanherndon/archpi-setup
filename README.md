@@ -6,7 +6,7 @@ pacman -S git ansible
 
 ansible-galaxy collection install community.general
 
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -C "your_email@example.com"
 
 
 command to run the playbook:
