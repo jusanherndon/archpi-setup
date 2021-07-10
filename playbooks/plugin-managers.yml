@@ -3,6 +3,8 @@
   file:
     path: "{{ item }}"
     state: directory 
+    owner: "{{ user }}"
+    group: "{{ user }}"
   loop:
     - "/home/{{ user }}/.vim"
     - "/home/{{ user }}/.vim/bundle"
@@ -45,3 +47,4 @@
   git:
     repo: https://github.com/zsh-users/zsh-autosuggestions
     dest: "/home/{{ user }}/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+

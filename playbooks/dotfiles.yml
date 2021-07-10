@@ -2,11 +2,15 @@
 - name: Create the dotfiles directory
   file:
     path: "/home/{{ user }}/dotfiles"
+    owner: "{{ user }}"
+    group: "{{ user }}"
     state: directory
     
 - name: Moving dotfiles to that directory
   copy:
     src: "{{ playbook_dir }}/playbooks/files/{{ item }}"
+    owner: "{{ user }}"
+    group: "{{ user }}"
     dest: "/home/{{ user }}/dotfiles/" 
   loop: 
     - .tmux.conf
@@ -15,6 +19,8 @@
 - name: templating .zshrc
   template:
     src:  "{{ playbook_dir }}/playbooks/templates/.zshrc"  
+    owner: "{{ user }}"
+    group: "{{ user }}"
     dest: "/home/{{ user }}/dotfiles"
 
 - name: making symbolic links
