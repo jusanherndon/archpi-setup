@@ -15,3 +15,10 @@
       - zsh
     extra_args: --needed
     state: present
+
+- name: Remove packages unwanted packages
+  community.general.pacman:
+    name:
+      - nano
+      - vi
+    state: absent
