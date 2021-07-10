@@ -16,7 +16,7 @@
     extra_args: --needed
     state: present
 
-- name: Remove packages unwanted packages
+- name: Removes unwanted packages
   community.general.pacman:
     name:
       - nano
