@@ -81,7 +81,8 @@ plugins=(zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-#
+
+eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/{{ ssh_public_key }}
 setopt COMPLETE_ALIASES
 HISTFILE=~/.histfile
