@@ -3,7 +3,7 @@
   community.general.git_config: 
     name: user.name
     scope: system
-    value: "Justin Herndon"
+    value: "{{ user_name }}"
 
 - name: git-config email
   community.general.git_config: 
