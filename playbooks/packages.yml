@@ -20,5 +20,4 @@
   community.general.pacman:
     name:
       - nano
-      - vi
     state: absent
