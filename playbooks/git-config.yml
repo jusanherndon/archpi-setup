@@ -1,24 +1,18 @@
 ---
 - name: git-config user name
-  become_user: "{{ user }}"
-  become: yes
   community.general.git_config: 
     name: user.name
-    scope: global 
+    scope: system
     value: "{{ user_name }}"
 
 - name: git-config email
-  become_user: "{{ user }}"
-  become: yes
   community.general.git_config: 
     name: user.email
-    scope: global 
+    scope: system
     value: "{{ user_email}}"
        
 - name: git-config editor
-  become_user: "{{ user }}"
-  become: yes
   community.general.git_config: 
     name: core.editor
-    scope: global 
+    scope: system
     value: "{{ user_editor }}" 
