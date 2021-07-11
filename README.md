@@ -6,7 +6,7 @@ This ansible playbbok is designed to take a fresh install of arch and turn it in
 
 pacman -S git ansible
 
-ansible-galaxy collection install community.general
+ansible-galaxy collection install --ignore-certs community.general
 
 ssh-keygen -C "your_email@example.com"
 
