@@ -1,7 +1,6 @@
 # arch-setup
 
 # Dependencies
---------------- 
 
 pacman -S git ansible
 
