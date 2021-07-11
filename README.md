@@ -1,5 +1,7 @@
 # arch-setup
 
+This ansible playbbok is designed to take a fresh install of arch and turn it into a working enviroment with mininimal user intervention
+
 # Dependencies
 
 pacman -S git ansible
