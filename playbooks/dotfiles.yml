@@ -35,4 +35,4 @@
 
 - name: making zsh default shell
   shell:
-    cmd: chsh -s $(which zsh)
+    cmd: "chsh -s $(which zsh) {{ user }}"
