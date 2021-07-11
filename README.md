@@ -8,6 +8,11 @@ ansible-galaxy collection install community.general
 
 ssh-keygen -C "your_email@example.com"
 
+Variables:
+--------------
+
+
+
 Ansible-Playbook Command
 --------------------------
 

@@ -29,16 +29,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-"Third Party Plugins I found
-call plug#begin('~/.vim/plugged')
-" Plugin for automatically surrounding words in brackets of any choice
-Plug 'tpope/vim-surround'
-"Fuzzy Search
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-" Vim multiple cursors
-Plug 'terryma/vim-multiple-cursors'
-call plug#end()
+ Plugin 'arouene/vim-ansible-vault'
 "Adds a file explorer
 Plugin 'preservim/nerdtree'
 "Adds ability to auto format files on saves
@@ -49,6 +40,17 @@ Plugin 'dense-analysis/ale'
 Plugin 'airblade/vim-gitgutter'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+"Third Party Plugins I found
+call plug#begin('~/.vim/plugged')
+" Plugin for automatically surrounding words in brackets of any choice
+Plug 'tpope/vim-surround'
+"Fuzzy Search
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+" Vim multiple cursors
+Plug 'terryma/vim-multiple-cursors'
+call plug#end()
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
