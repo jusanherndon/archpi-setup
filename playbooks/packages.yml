@@ -13,6 +13,7 @@
       - python-pip
       - netctl
       - zsh
+      - htop
     extra_args: --needed
     state: present
 
