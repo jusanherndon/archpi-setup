@@ -1,14 +1,15 @@
 # arch-setup
 
-# This ansible playbook assumes you already have git and ansible installed on your system
+# Dependencies
+--------------- 
 
 pacman -S git ansible
 
 ansible-galaxy collection install community.general
 
 ssh-keygen -C "your_email@example.com"
---------------------------
 
-command to run the playbook:
+Ansible-Playbook Command
+--------------------------
 
 ansible-playbook --ask-vault-pass setup.yml
