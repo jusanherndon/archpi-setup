@@ -17,6 +17,24 @@
     scope: system
     value: "{{ user_editor }}" 
 
+- name: git-config merge tool
+  community.general.git_config: 
+    name: merge.tool
+    scope: system
+    value: "{{ user_mergetool }}" 
+
+- name: git-config merge tool
+  community.general.git_config: 
+    name: merge.conflictstyle
+    scope: system
+    value: "{{ user_conflictstyle }}" 
+
+- name: git-config merge tool
+  community.general.git_config: 
+    name: mergetool.prompt
+    scope: system
+    value: "{{ user_mergetool_prompt }}" 
+
 - name: github cli
   become_user: "{{ user }}"
   shell:

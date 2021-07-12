@@ -22,6 +22,9 @@ Variables:
 - password: user password
 - password_root: root password
 - shell: aboslute path to a installed shell like zsh or bash
+- user_mergetool: specifying default git merge tool
+- user_conflictstyle: specifying default git conflict style
+- user_mergetool_prompt: either true or false
 
 Tags
 --------------------------
