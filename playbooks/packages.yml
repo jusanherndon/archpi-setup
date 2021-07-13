@@ -14,6 +14,7 @@
       - netctl
       - zsh
       - htop
+      - github-cli
     extra_args: --needed
     state: present
 
