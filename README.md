@@ -19,6 +19,7 @@ Variables:
 - wireless_network_password: that networks' password
 - ssh_public_key: file name of private ssh key
 - password: user password
+- shell: aboslute pathe to a installed shell like zsh or bash
 
 Ansible-Playbook Command
 --------------------------
