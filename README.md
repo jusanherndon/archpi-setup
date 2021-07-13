@@ -25,3 +25,8 @@ Ansible-Playbook Command
 --------------------------
 
 ansible-playbook --ask-vault-pass setup.yml
+
+Steps to  Run after playbook
+-----------------------------
+
+get the api key for github cli
