@@ -16,3 +16,8 @@
     name: core.editor
     scope: system
     value: "{{ user_editor }}" 
+
+- name: github cli
+  become_user: "{{ user }}"
+  shell:
+    cmd: gh config set -h github.com git_protocol ssh
