@@ -15,6 +15,7 @@
       - zsh
       - htop
       - github-cli
+      - ntp
     extra_args: --needed
     state: present
 

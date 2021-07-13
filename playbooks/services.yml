@@ -1,6 +1,12 @@
 ---
-- name: ssh service enabled
+- name: ssh service
   systemd:
     name: sshd
+    enabled: yes
+    state: started
+
+- name: ntp service
+  systemd:
+    name: ntpd 
     enabled: yes
     state: started
