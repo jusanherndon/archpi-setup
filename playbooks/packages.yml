@@ -22,4 +22,5 @@
   community.general.pacman:
     name:
       - nano
+      - sudo
     state: absent
