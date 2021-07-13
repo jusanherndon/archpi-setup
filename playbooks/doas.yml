@@ -4,9 +4,3 @@
     src: "{{ playbook_dir }}/playbooks/files/doas.conf"
     dest: "/etc/doas.conf"
     force: yes
-      
-- name: adding a user to the wheel group
-  user:
-    name: "{{ user }}" 
-    groups: wheel
-    append: yes

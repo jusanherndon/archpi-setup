@@ -32,7 +32,3 @@
     - .tmux.conf
     - .vimrc
     - .zshrc
-
-- name: making zsh default shell
-  shell:
-    cmd: "chsh -s $(which zsh) {{ user }}"
