@@ -8,8 +8,6 @@ pacman -S git ansible
 
 ansible-galaxy collection install --ignore-certs community.general
 
-ssh-keygen -C "your_email@example.com"
-
 Variables:
 --------------
 
@@ -31,3 +29,5 @@ Steps to  Run after playbook
 -----------------------------
 
 get the api key for github cli
+
+add the ssh key generated into your github account
