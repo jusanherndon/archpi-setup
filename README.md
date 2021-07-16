@@ -25,7 +25,13 @@ Tags
 --------------------------
 adding tags for tasks to be able to skip roles if need be
 
+using the --skip-tags "tag, name"
+
 - user: used for skipping user config
+- packages: skipping package installation
+- local: skipping local language and time setup
+- network: skipping wifi network setup
+- services: skipping systemd setup
 
 Ansible-Playbook Command
 --------------------------

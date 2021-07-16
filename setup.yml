@@ -6,6 +6,9 @@
   tasks:
 
     - include: "{{ playbook_dir }}/playbooks/packages.yml"
+      tags:
+        - packages
+
     - include: "{{ playbook_dir }}/playbooks/git-config.yml"
     - include: "{{ playbook_dir }}/playbooks/dotfiles.yml"
 
@@ -16,5 +19,13 @@
     - include: "{{ playbook_dir }}/playbooks/doas.yml"
     - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"
     - include: "{{ playbook_dir }}/playbooks/local-time-language.yml"
+      tags:
+        - local
+
     - include: "{{ playbook_dir }}/playbooks/wireless-network.yml"
+      tags:
+        - network
+
     - include: "{{ playbook_dir }}/playbooks/services.yml" 
+      tags:
+        - services
