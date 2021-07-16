@@ -20,7 +20,7 @@ Variables:
 - ssh_public_key: file name of private ssh key
 - password: user password
 - password_root: root password
-- shell: aboslute pathe to a installed shell like zsh or bash
+- shell: aboslute path to a installed shell like zsh or bash
 
 Tags
 --------------------------
