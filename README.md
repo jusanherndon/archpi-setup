@@ -26,6 +26,12 @@ Ansible-Playbook Command
 
 ansible-playbook --ask-vault-pass setup.yml
 
+adding tags for tasks to be able to skip roles if need be:
+
+current tags:
+
+- user
+
 Steps to  Run after playbook
 -----------------------------
 

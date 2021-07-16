@@ -4,10 +4,15 @@
     - "variables/variables.yml"
 
   tasks:
+
     - include: "{{ playbook_dir }}/playbooks/packages.yml"
     - include: "{{ playbook_dir }}/playbooks/git-config.yml"
     - include: "{{ playbook_dir }}/playbooks/dotfiles.yml"
+
     - include: "{{ playbook_dir }}/playbooks/user-config.yml"
+      tags:
+        - user
+
     - include: "{{ playbook_dir }}/playbooks/doas.yml"
     - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"
     - include: "{{ playbook_dir }}/playbooks/local-time-language.yml"
