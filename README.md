@@ -21,16 +21,17 @@ Variables:
 - password: user password
 - shell: aboslute pathe to a installed shell like zsh or bash
 
+Tags
+--------------------------
+adding tags for tasks to be able to skip roles if need be
+
+- user: used for skipping user config
+
 Ansible-Playbook Command
 --------------------------
 
 ansible-playbook --ask-vault-pass setup.yml
 
-adding tags for tasks to be able to skip roles if need be:
-
-current tags:
-
-- user
 
 Steps to  Run after playbook
 -----------------------------
