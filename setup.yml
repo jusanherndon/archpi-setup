@@ -10,7 +10,12 @@
         - packages
 
     - include: "{{ playbook_dir }}/playbooks/git-config.yml"
+      tags:
+        - git_config
+
     - include: "{{ playbook_dir }}/playbooks/dotfiles.yml"
+      tags:
+        - dotfiles
 
     - include: "{{ playbook_dir }}/playbooks/user-config.yml"
       tags:
@@ -18,6 +23,9 @@
 
     - include: "{{ playbook_dir }}/playbooks/doas.yml"
     - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"
+      tags:
+        - plugin
+
     - include: "{{ playbook_dir }}/playbooks/local-time-language.yml"
       tags:
         - local

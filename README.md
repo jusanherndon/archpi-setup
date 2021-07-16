@@ -32,6 +32,9 @@ using the --skip-tags "tag, name"
 - local: skipping local language and time setup
 - network: skipping wifi network setup
 - services: skipping systemd setup
+- git_config: skipping git config
+- plugin: skipping installation of plugin managers
+- dotfiles: skipping dotfiles
 
 Ansible-Playbook Command
 --------------------------
