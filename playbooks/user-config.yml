@@ -6,9 +6,22 @@
     state: present
     password: "{{ password | password_hash('sha512') }}"
     shell: "{{ shell }}"
+    groups: wheel
+    append: yes
+
+- name: Changing root settings
+  user:
+    name: root
+    state: present
+    password: "{{ password_root | password_hash('sha512') }}"
+    shell: "{{ shell }}"
+    append: yes
+
+- name: adding ssh_key to user
+  user:
+    name: "{{ user }}"
     generate_ssh_key: yes
     ssh_key_type: rsa
     ssh_key_bits: 2048
     ssh_key_file: ".ssh/{{ ssh_public_key }}"
-    groups: wheel
-    append: yes
+
