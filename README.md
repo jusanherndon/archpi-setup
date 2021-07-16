@@ -20,6 +20,7 @@ Variables:
 - wireless_network_name: SSID of a wifi network
 - wireless_network_password: that networks' password
 - ssh_public_key: file name of private ssh key
+- password: user password
 
 Ansible-Playbook Command
 --------------------------
