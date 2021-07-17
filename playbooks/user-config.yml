@@ -11,7 +11,7 @@
 
 - name: Changing root settings
   user:
-    name: root
+    name: "{{ user_root }}"
     state: present
     password: "{{ password_root | password_hash('sha512') }}"
 

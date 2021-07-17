@@ -12,6 +12,7 @@ Variables:
 --------------
 
 - user: name of computer username
+- user_root: name of your root user
 - user_email: email address of you github account
 - user_name: name associated with github account
 - user_editor: perfered terminal editor of choice
