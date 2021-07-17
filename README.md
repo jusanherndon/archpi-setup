@@ -28,6 +28,8 @@ adding tags for tasks to be able to skip roles if need be
 
 using the --skip-tags "tag, name"
 
+or run just the tagged tasks with --tags "tag name"
+
 - user: used for skipping user config
 - packages: skipping package installation
 - local: skipping local language and time setup
