@@ -23,13 +23,13 @@
     scope: system
     value: "{{ user_mergetool }}" 
 
-- name: git-config merge tool
+- name: git-config conflict style
   community.general.git_config: 
     name: merge.conflictstyle
     scope: system
     value: "{{ user_conflictstyle }}" 
 
-- name: git-config merge tool
+- name: git-config merge tool prompt
   community.general.git_config: 
     name: mergetool.prompt
     scope: system
