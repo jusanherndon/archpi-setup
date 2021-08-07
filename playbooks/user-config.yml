@@ -4,7 +4,7 @@
   user:
     name: "{{ user }}"
     state: present
-    password: "{{ password | password_hash('sha512') }}"
+    password: '{{ password | password_hash("sha512") }}'
     shell: "{{ shell }}"
     groups: wheel
     append: yes
@@ -13,7 +13,7 @@
   user:
     name: "{{ user_root }}"
     state: present
-    password: "{{ password_root | password_hash('sha512') }}"
+    password: '{{ password_root | password_hash("sha512") }}'
 
 - name: adding ssh_key to user
   user:
