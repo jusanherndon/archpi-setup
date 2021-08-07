@@ -55,3 +55,16 @@ Steps to  Run after playbook
 get the api key for github cli
 
 add the ssh key generated into your github account
+
+Command to run to check encrypted Variables
+-------------------------------------------
+
+(Be sure to be in the variables folder)
+
+ansible localhost -m ansible.builtin.debug -a var="variable, names" -e "@variable_file.yml" --ask-vault-pass
+
+ 
+ Command to run to Generate Variable encryption:
+ -----------------------------------------------
+ 
+ ansible-vault encrypt_string 'text_needed_to_be_encrypted' --name 'ansible_variable'
