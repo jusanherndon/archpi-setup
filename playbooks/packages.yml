@@ -15,7 +15,7 @@
       - zsh
       - htop
       - github-cli
-      - ntp
+      - chrony
     extra_args: --needed
     state: present
 

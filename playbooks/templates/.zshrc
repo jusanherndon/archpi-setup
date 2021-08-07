@@ -91,7 +91,6 @@ SAVEHIST=1000
 setopt notify
 unsetopt beep
 bindkey -v
-doas ntpdate 0.arch.pool.ntp.org
 #
 # export MANPATH="/usr/local/man:$MANPATH"
 
