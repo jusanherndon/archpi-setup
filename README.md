@@ -6,7 +6,7 @@ This ansible playbbok is designed to take a fresh install of arch and turn it in
 
 pacman -S git ansible
 
-ansible-galaxy collection install --ignore-certs community.general
+ansible-galaxy install -r requirements.yml 
 
 Variables:
 --------------

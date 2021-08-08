@@ -3,6 +3,7 @@
 roles:
 
   - name: jusanherndon.packages
+  - name: jusanherndon.git_config
 
 collections:
   

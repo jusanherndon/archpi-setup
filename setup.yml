@@ -5,12 +5,9 @@
   
   roles:
     - jusanherndon.packages
+    - jusanherndon.git_config
 
   tasks:
-
-    - include: "{{ playbook_dir }}/playbooks/git-config.yml"
-      tags:
-        - git_config
 
     - include: "{{ playbook_dir }}/playbooks/dotfiles.yml"
       tags:
