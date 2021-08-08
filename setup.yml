@@ -2,12 +2,11 @@
 - hosts: localhost
   vars_files:
     - "variables/variables.yml"
+  
+  roles:
+    - jusanherndon.packages
 
   tasks:
-
-    - include: "{{ playbook_dir }}/playbooks/packages.yml"
-      tags:
-        - packages
 
     - include: "{{ playbook_dir }}/playbooks/git-config.yml"
       tags:

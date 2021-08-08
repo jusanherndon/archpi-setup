@@ -3,10 +3,8 @@
 roles:
 
   - name: jusanherndon.packages
-    version: latest
 
 collections:
   
   - name: community.general
     url: https://galaxy.ansible.com
-    version: latest
