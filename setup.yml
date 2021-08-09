@@ -8,16 +8,13 @@
     - jusanherndon.git_config
     - jusanherndon.local_settings
     - jusanherndon.services
+    - jusanherndon.user_config
 
   tasks:
 
     - include: "{{ playbook_dir }}/playbooks/dotfiles.yml"
       tags:
         - dotfiles
-
-    - include: "{{ playbook_dir }}/playbooks/user-config.yml"
-      tags:
-        - user
 
     - include: "{{ playbook_dir }}/playbooks/doas.yml"
     - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"

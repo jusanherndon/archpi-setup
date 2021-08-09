@@ -6,6 +6,7 @@ roles:
   - name: jusanherndon.git_config
   - name: jusanherndon.local_settings
   - name: jusanherndon.services
+  - name: jusanherndon.user_config
 
 collections:
   

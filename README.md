@@ -26,6 +26,7 @@ Variables:
 - user_conflictstyle: specifying default git conflict style
 - user_mergetool_prompt: either true or false
 - timezone: your local timezone
+- groups: list of groups a user could belong to
 
 Tags
 --------------------------
