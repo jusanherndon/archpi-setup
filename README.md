@@ -34,23 +34,6 @@ Variables:
 - timezone: your local timezone
 - groups: list of groups a user could belong to
 
-Tags
---------------------------
-adding tags for tasks to be able to skip roles if need be
-
-using the --skip-tags "tag, name"
-
-or run just the tagged tasks with --tags "tag name"
-
-- user: used for skipping user config
-- packages: skipping package installation
-- local: skipping local language and time setup
-- network: skipping wifi network setup
-- services: skipping systemd setup
-- git_config: skipping git config
-- plugin: skipping installation of plugin managers
-- dotfiles: skipping dotfiles
-
 Ansible-Playbook Command
 --------------------------
 
