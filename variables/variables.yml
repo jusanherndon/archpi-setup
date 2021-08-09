@@ -5,6 +5,7 @@ user_editor: "vim"
 user_mergetool: "vimdiff"
 user_conflictstyle: "diff3"
 user_mergetool_prompt: "false"
+timezone: "America/Chicago"
 
 user: !vault |
           $ANSIBLE_VAULT;1.1;AES256

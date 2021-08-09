@@ -6,6 +6,7 @@
   roles:
     - jusanherndon.packages
     - jusanherndon.git_config
+    - jusanherndon.local_settings
 
   tasks:
 
@@ -21,10 +22,6 @@
     - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"
       tags:
         - plugin
-
-    - include: "{{ playbook_dir }}/playbooks/local-time-language.yml"
-      tags:
-        - local
 
     - include: "{{ playbook_dir }}/playbooks/wireless-network.yml"
       tags:
