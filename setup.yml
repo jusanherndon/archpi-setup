@@ -12,9 +12,5 @@
     - jusanherndon.doas
     - jusanherndon.dotfiles
     - jusanherndon.plugin_managers
+    #- jusanherndon.wifi_setup
 
-  tasks:
-
-    # - include: "{{ playbook_dir }}/playbooks/wireless-network.yml"
-    #  tags:
-    #    - network

@@ -10,6 +10,7 @@ roles:
   - name: jusanherndon.doas
   - name: jusanherndon.dotfiles
   - name: jusanherndon.plugin_managers
+  - name: jusanherndon.wifi_setup
 
 collections:
   
