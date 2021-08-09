@@ -12,7 +12,7 @@ ansible-galaxy install -r requirements.yml
 
 (raspberry pi extra dependcies)
 
-pacman-key --populate armarchlinux
+pacman-key --populate archlinuxarm
 
 Variables:
 --------------
