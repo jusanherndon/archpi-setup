@@ -8,6 +8,7 @@ roles:
   - name: jusanherndon.services
   - name: jusanherndon.user_config
   - name: jusanherndon.doas
+  - name: jusanherndon.dotfiles
 
 collections:
   

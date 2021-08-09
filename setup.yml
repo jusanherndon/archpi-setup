@@ -10,12 +10,9 @@
     - jusanherndon.services
     - jusanherndon.user_config
     - jusanherndon.doas
+    - jusanherndon.dotfiles
 
   tasks:
-
-    - include: "{{ playbook_dir }}/playbooks/dotfiles.yml"
-      tags:
-        - dotfiles
 
     - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"
       tags:
