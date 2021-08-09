@@ -11,13 +11,10 @@
     - jusanherndon.user_config
     - jusanherndon.doas
     - jusanherndon.dotfiles
+    - jusanherndon.plugin_managers
 
   tasks:
 
-    - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"
-      tags:
-        - plugin
-
-    - include: "{{ playbook_dir }}/playbooks/wireless-network.yml"
-      tags:
-        - network
+    # - include: "{{ playbook_dir }}/playbooks/wireless-network.yml"
+    #  tags:
+    #    - network

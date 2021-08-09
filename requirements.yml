@@ -9,6 +9,7 @@ roles:
   - name: jusanherndon.user_config
   - name: jusanherndon.doas
   - name: jusanherndon.dotfiles
+  - name: jusanherndon.plugin_managers
 
 collections:
   
