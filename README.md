@@ -4,9 +4,15 @@ This ansible playbbok is designed to take a fresh install of arch and turn it in
 
 # Dependencies
 
+pacman-key --init
+
 pacman -S git ansible
 
 ansible-galaxy install -r requirements.yml 
+
+(raspberry pi extra dependcies)
+
+pacman-key --populate armarchlinux
 
 Variables:
 --------------
