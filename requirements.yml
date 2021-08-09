@@ -1,0 +1,18 @@
+---
+
+roles:
+
+  - name: jusanherndon.packages
+  - name: jusanherndon.git_config
+  - name: jusanherndon.local_settings
+  - name: jusanherndon.services
+  - name: jusanherndon.user_config
+  - name: jusanherndon.doas
+  - name: jusanherndon.dotfiles
+  - name: jusanherndon.plugin_managers
+  #- name: jusanherndon.wifi_setup
+
+collections:
+  
+  - name: community.general
+    url: https://galaxy.ansible.com

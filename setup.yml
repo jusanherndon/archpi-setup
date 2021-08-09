@@ -2,38 +2,15 @@
 - hosts: localhost
   vars_files:
     - "variables/variables.yml"
+  
+  roles:
+    - jusanherndon.packages
+    - jusanherndon.git_config
+    - jusanherndon.local_settings
+    - jusanherndon.services
+    - jusanherndon.user_config
+    - jusanherndon.doas
+    - jusanherndon.dotfiles
+    - jusanherndon.plugin_managers
+    #- jusanherndon.wifi_setup
 
-  tasks:
-
-    - include: "{{ playbook_dir }}/playbooks/packages.yml"
-      tags:
-        - packages
-
-    - include: "{{ playbook_dir }}/playbooks/git-config.yml"
-      tags:
-        - git_config
-
-    - include: "{{ playbook_dir }}/playbooks/dotfiles.yml"
-      tags:
-        - dotfiles
-
-    - include: "{{ playbook_dir }}/playbooks/user-config.yml"
-      tags:
-        - user
-
-    - include: "{{ playbook_dir }}/playbooks/doas.yml"
-    - include: "{{ playbook_dir }}/playbooks/plugin-managers.yml"
-      tags:
-        - plugin
-
-    - include: "{{ playbook_dir }}/playbooks/local-time-language.yml"
-      tags:
-        - local
-
-    - include: "{{ playbook_dir }}/playbooks/wireless-network.yml"
-      tags:
-        - network
-
-    - include: "{{ playbook_dir }}/playbooks/services.yml" 
-      tags:
-        - services

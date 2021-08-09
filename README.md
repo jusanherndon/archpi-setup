@@ -4,9 +4,15 @@ This ansible playbbok is designed to take a fresh install of arch and turn it in
 
 # Dependencies
 
+pacman-key --init
+
 pacman -S git ansible
 
-ansible-galaxy collection install --ignore-certs community.general
+ansible-galaxy install -r requirements.yml 
+
+(raspberry pi extra dependcies)
+
+pacman-key --populate archlinuxarm
 
 Variables:
 --------------
@@ -25,23 +31,8 @@ Variables:
 - user_mergetool: specifying default git merge tool
 - user_conflictstyle: specifying default git conflict style
 - user_mergetool_prompt: either true or false
-
-Tags
---------------------------
-adding tags for tasks to be able to skip roles if need be
-
-using the --skip-tags "tag, name"
-
-or run just the tagged tasks with --tags "tag name"
-
-- user: used for skipping user config
-- packages: skipping package installation
-- local: skipping local language and time setup
-- network: skipping wifi network setup
-- services: skipping systemd setup
-- git_config: skipping git config
-- plugin: skipping installation of plugin managers
-- dotfiles: skipping dotfiles
+- timezone: your local timezone
+- user_groups: list of groups a user could belong to
 
 Ansible-Playbook Command
 --------------------------

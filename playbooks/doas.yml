@@ -1,6 +1,0 @@
----
-- name: replacing doas file
-  copy:
-    src: "{{ playbook_dir }}/playbooks/files/doas.conf"
-    dest: "/etc/doas.conf"
-    force: yes
