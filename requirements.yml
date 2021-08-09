@@ -5,6 +5,7 @@ roles:
   - name: jusanherndon.packages
   - name: jusanherndon.git_config
   - name: jusanherndon.local_settings
+  - name: jusanherndon.services
 
 collections:
   

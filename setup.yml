@@ -7,6 +7,7 @@
     - jusanherndon.packages
     - jusanherndon.git_config
     - jusanherndon.local_settings
+    - jusanherndon.services
 
   tasks:
 
@@ -26,7 +27,3 @@
     - include: "{{ playbook_dir }}/playbooks/wireless-network.yml"
       tags:
         - network
-
-    - include: "{{ playbook_dir }}/playbooks/services.yml" 
-      tags:
-        - services
