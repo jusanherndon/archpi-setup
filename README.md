@@ -6,7 +6,7 @@ This ansible playbbok is designed to take a fresh install of arch and turn it in
 
 pacman-key --init
 
-pacman -S git ansible
+pacman -Syu git ansible
 
 ansible-galaxy install -r requirements.yml 
 
